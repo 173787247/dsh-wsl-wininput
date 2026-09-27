@@ -1,0 +1,5 @@
+- insert:
+    - id: dsh-wsl-wininput
+      name: dsh-wsl-wininput
+      config:
+        timeoutMs: 30000
