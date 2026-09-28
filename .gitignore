@@ -1,2 +1,17 @@
 node_modules/
 *.log
+
+# ── 凭据 ──────────────────────────────────────────────────────────────
+# DSH 自己的密钥在 ~/.dsh/.env（600），那个目录不是 git 仓，推不出去。
+# 这里防的是另一件事：在插件目录里临时建 .env 调试时被 `git add -A` 带上。
+# .gitignore 只防手滑 —— `git add -f` 能绕过，而且一旦推上去就永久在历史里。
+# `.env` alone only catches files literally named .env; a stray examples/test.env
+# would sail past it. Match every *.env, then put the templates back.
+.env
+.env.*
+*.env
+!*.env.example
+!*.env.template
+*.pem
+*.key
+credentials*.yaml
