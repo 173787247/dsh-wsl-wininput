@@ -43,6 +43,15 @@ npm test
 
 The unit tests run anywhere. The live tests are skipped outside WSL.
 
+## Compatibility
+
+| Field | Value |
+|-------|-------|
+| **Plugin** | `dsh-wsl-wininput` **0.1.0** |
+| **Minimum dsh** | ≥ **0.1.2** (web UI one-shot `?token=` on Windows relay `:3081`) |
+| **Latest verified** | See [dsh-wsl-kit Compatibility](https://github.com/173787247/dsh-wsl-kit#compatibility-2026-09) (currently **`0.2.0-rc.2`**) — single source of truth for the suite |
+| **Kit set** | `full` or install alone |
+
 ## License
 
 MIT
